@@ -3,3 +3,63 @@
 */
 
 
+/* File Content :
+    Fonts
+    General Style
+    Header Style
+*/
+
+
+/* ====== Fonts ====== */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+/* ====== General Style ====== */
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #ffffff;
+    background: linear-gradient(to bottom, #181f2a 0%, #2c333d 100%) fixed;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+
+
+/* ====== Header Style ====== */
+header {
+    font-family: 'Raleway';
+}
+.container {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
+
+.navbar-nav {
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-left: 4rem;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
