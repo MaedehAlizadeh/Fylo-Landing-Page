@@ -23,18 +23,42 @@
     margin: 0;
 }
 
+:root {
+    --main-background: #181f2a;
+    --footer-background: #0b1523;
+    --testimonials-background: #202a3c;
+    --intro-email-background: #1c2431;
+    --text-color: #ffffff;
+    --gradient-color-2: #65e2d9;
+    --gradient-color: #339ecc;
+    --hover-color: #8bdfd9;
+}
+
 body {
-    color: #ffffff;
-    background: linear-gradient(to bottom, #181f2a 0%, #2c333d 100%) fixed;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background: var(--main-background);
     font-size: 14px;
     font-family: 'Open Sans';
+}
+
+header, h1 {
+    font-family: 'Raleway';
+    font-weight: 700;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 
 /* ====== Header Style ====== */
 header {
-    font-family: 'Raleway';
+    background: var(--intro-email-background);
+    display: flex;
 }
+
 .container {
     width: 100%;
     margin-top: 4rem;
@@ -50,7 +74,6 @@ header {
 }
 
 .navbar-nav {
-    color: #ffffff;
     list-style: none;
     display: flex;
 }
@@ -59,7 +82,4 @@ header {
     margin-left: 4rem;
 }
 
-.navbar-nav a {
-    text-decoration: none;
-    color: #ffffff;
-}
+
