@@ -7,6 +7,9 @@
     Fonts
     General Style
     Header Style
+    Hero Section Style
+    Features Section Style
+
 */
 
 
@@ -52,13 +55,11 @@ a {
     text-decoration: none;
 }
 
-
 /* ====== Header Style ====== */
 header {
     background: var(--intro-email-background);
     display: flex;
 }
-
 .container {
     width: 100%;
     margin-top: 4rem;
@@ -83,3 +84,75 @@ header {
 }
 
 
+/* ====== Hero Section Style ====== */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: var(--intro-email-background) url('../images/bg-curvy-desktop.svg') left bottom/100vw 240px  no-repeat;
+    margin-bottom: 5rem;
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-text h1, .hero-text p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3em;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.hero-btn {
+    width: 200px;
+    color: var(--text-color);
+    background: linear-gradient(150deg , var(--gradient-color-2) , var(--gradient-color));
+    border-radius: 25px;
+    transition: all 1s linear;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.hero-btn:hover {
+    background: var(--hover-color);
+}
+
+
+/* ====== Features Section Style ====== */
+.features {
+    width: 65%;
+    margin: 7rem auto 3rem;
+}
+
+.features-item {
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.features-item img {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+
+.feature-text h1 , .feature-text p {
+    text-align: center;
+    margin-bottom: .5rem;
+}
