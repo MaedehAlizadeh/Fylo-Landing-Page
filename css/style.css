@@ -10,6 +10,7 @@
     Hero Section Style
     Features Section Style
     Stay Productive  Section Style
+    Testimonials Section Style
 */
 
 
@@ -195,4 +196,55 @@ header {
 .productive-btn:hover {
     color: var(--text-color);
     border-color: var(--text-color);
+}
+
+
+/* ====== Testimonials Section Style ====== */
+.testimonials {
+    position: relative;
+    margin: 10rem;
+}
+
+.testimonials > img {
+    position: absolute;
+    top: -36px;
+    left: -9px;
+    z-index: -20;
+}
+
+.testimonials-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+}
+
+.testimonials-box {
+    background-color: var(--testimonials-background);
+    padding: 3rem 2rem 1.8rem;
+    border-radius: 5px;
+    word-spacing: 3px;
+}
+
+.testimonials-person {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.testimonials-person img{
+    width: 28px;
+    height: 28px;
+    border-radius: 20px;
+    margin-right: .5rem;
+}
+.testimonials-person p {
+    font-size: .7em;
+}
+
+.testimonials-person p:first-child{
+    font-weight: 600;
+    font-size: .8em;
+    margin-bottom: .5rem;
 }
