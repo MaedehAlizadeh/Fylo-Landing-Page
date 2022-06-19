@@ -9,7 +9,7 @@
     Header Style
     Hero Section Style
     Features Section Style
-
+    Stay Productive  Section Style
 */
 
 
@@ -94,7 +94,7 @@ header {
     margin-bottom: 5rem;
 }
 
-.hero-text {
+.hero-text{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,4 +155,44 @@ header {
 .feature-text h1 , .feature-text p {
     text-align: center;
     margin-bottom: .5rem;
+}
+
+
+/* ====== Stay Productive  Section Style ====== */
+.stay-productive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.productive-text {
+    padding-top: 2.5rem;
+}
+
+.productive-text h1{
+    text-align: left;
+    font-size: 3em;
+}
+
+.productive-text p {
+    font-size: 1.2em;
+    padding-top: 1rem;
+}
+
+.productive-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.2em;
+    background: url('../images/icon-arrow.svg') right center no-repeat;
+    color: var(--gradient-color-2);
+    border-bottom: 1px solid var(--gradient-color-2);
+    transition: all .4s ease-in-out;
+}
+
+.productive-btn:hover {
+    color: var(--text-color);
+    border-color: var(--text-color);
 }
