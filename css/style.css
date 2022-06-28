@@ -11,6 +11,7 @@
     Features Section Style
     Stay Productive  Section Style
     Testimonials Section Style
+    Call to Action Section Style
 */
 
 
@@ -31,7 +32,7 @@
     --main-background: #181f2a;
     --footer-background: #0b1523;
     --testimonials-background: #202a3c;
-    --intro-email-background: #1c2431;
+    --hero-cta-background: #1c2431;
     --text-color: #ffffff;
     --gradient-color-2: #65e2d9;
     --gradient-color: #339ecc;
@@ -46,9 +47,10 @@ body {
     font-family: 'Open Sans';
 }
 
-header, h1 {
+header, h1, .cta-msg , .cta-btn{
     font-family: 'Raleway';
     font-weight: 700;
+
 }
 
 a {
@@ -58,7 +60,7 @@ a {
 
 /* ====== Header Style ====== */
 header {
-    background: var(--intro-email-background);
+    background: var(--hero-cta-background);
     display: flex;
 }
 .container {
@@ -91,7 +93,7 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: var(--intro-email-background) url('../images/bg-curvy-desktop.svg') left bottom/100vw 240px  no-repeat;
+    background: var(--hero-cta-background) url('../images/bg-curvy-desktop.svg') left bottom/100vw 240px  no-repeat;
     margin-bottom: 5rem;
 }
 
@@ -240,11 +242,72 @@ header {
     margin-right: .5rem;
 }
 .testimonials-person p {
-    font-size: .7em;
+    font-size: .6em;
 }
 
 .testimonials-person p:first-child{
     font-weight: 600;
     font-size: .8em;
-    margin-bottom: .5rem;
+    margin-bottom: .2rem;
+}
+
+
+/* ====== Call to Action Section Style ====== */
+.cta {
+    background-color: var(--hero-cta-background);
+    width: 60%;
+    margin: 10rem auto;
+    border-radius: 5px;
+}
+
+.cta-container {
+    padding: 3rem 4rem calc(3rem - 28px);
+    text-align: center;
+}
+
+.cta-container h1{
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.cta-form {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.cta-email,
+.cta-btn {
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 0 2rem;
+}
+
+.cta-email {
+    width: 450px;
+    margin-right: 2rem;
+}
+
+.cta-btn {
+    width: 230px;
+    color: var(--text-color);
+    background: linear-gradient(150deg , var(--gradient-color-2) , var(--gradient-color));
+    cursor: pointer;
+    transition: all .5;
+    font-size: 1.1em;
+}
+
+.cta-btn:hover {
+    background: var(--hover-color);
+}
+
+.cta-msg {
+    display: block;
+    color: #f00;
+    text-align: left;
+    min-height: 28px;
+    padding-left: 3rem;
+    padding-top: .5rem;
 }
